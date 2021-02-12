@@ -1,0 +1,67 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Requirments</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/fontawesome.min.css">
+  </head>
+  <body>
+    <br>
+
+    <div class="container">
+        
+        <div class = "panel panel-default">
+           <div class = "panel-heading">
+              <h3 class = "panel-title">Brute Force Password List Genarator</h3>
+           </div>
+           
+           <div class = "panel-body">
+              
+              <form method="post" action="app/Action.php">
+                  
+                  <div class="form-group">
+                    <label for="">File Name</label>
+                    <input type="text" required name="file_name" class="form-control" placeholder="File Name">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="">Victim Full Name</label>
+                    <input type="text" required class="form-control" name="v_name" placeholder="Victim full name">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="">Phone Numbers</label>
+                    <input type="text" class="form-control" name="phones" placeholder="Phone Numbers">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="">Date of Birth</label>
+                    <input type="text" class="form-control" name="dob" placeholder="dd-mm-yyyy">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="">Keywords</label> 
+                    <textarea name="keywords" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Keywords List"></textarea>
+                  </div>
+                  
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+           </div>
+        </div>
+        
+        
+    </div>
+    
+
+    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
