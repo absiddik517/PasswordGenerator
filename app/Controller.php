@@ -234,7 +234,7 @@
             header('Content-Length: ' . filesize($file));
             readfile($file);
             
-            //unlink($file);
+            unlink($file);
         }
     }
 
